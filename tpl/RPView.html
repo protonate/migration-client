@@ -1,0 +1,27 @@
+<div id="details" class="span9"></div>
+<div class="span3">
+    <div id="rp-toolbar" class="well">
+
+        <div class="alert alert-info">
+            <h4 class="alert-heading"><%= rp %></h4>
+            <div class="loadfile-url">source <a href=<%= rpxUrl %> target="_blank">rpx load file</a></div>
+            <div class="loadfile-url">source <a href=<%= s3Url %> target="_blank">s3 load file</a></div>
+        </div>
+
+        <div class="alert alert-info">
+        	<h4 class="alert-heading">actions</h4>
+
+        	<input id="ready-to-migrate" type="checkbox" <%= ready_to_migrate ? 'checked' : '' %>></input><label for="ready-to-migrate">ready to migrate: </label>
+        	<div><button id="button-migate" class="btn btn-warning">migrate</button></div>
+        	<div><button id="button-success" class="btn btn-success disabled">migrated!</button></div>
+        	<div><button id="button-rollback" class="btn btn-warning">rollback</button></div>
+        </div>
+
+        <div class="alert alert-warning">
+          <h4 class="alert-heading">under construction</h4>
+            these don't do anything yet
+        </div>
+
+
+    </div>
+</div>
